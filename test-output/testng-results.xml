@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[Test case started verifySuccessfullRegistration]]>
+    </line>
+    <line>
+      <![CDATA[Test case passed verifySuccessfullRegistration]]>
+    </line>
+    <line>
+      <![CDATA[Test case started verifyRegistrationFunctionality]]>
+    </line>
+    <line>
+      <![CDATA[Test case passed verifyRegistrationFunctionality]]>
+    </line>
+    <line>
+      <![CDATA[Test case started verifyValidLogin]]>
+    </line>
+    <line>
+      <![CDATA[Test case passed verifyValidLogin]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="50963" started-at="2022-11-02T02:39:45Z" finished-at="2022-11-02T02:40:36Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="50963" started-at="2022-11-02T02:39:45Z" finished-at="2022-11-02T02:40:36Z">
+      <class name="com.codemind.b3project.testCases.HomePageTestCases">
+        <test-method status="PASS" signature="initilizeBrowser()[pri:0, instance:com.codemind.b3project.testCases.HomePageTestCases@10bdf5e5]" name="initilizeBrowser" is-config="true" duration-ms="3212" started-at="2022-11-02T02:40:08Z" finished-at="2022-11-02T02:40:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifyRegistrationFunctionality()[pri:0, instance:com.codemind.b3project.testCases.HomePageTestCases@10bdf5e5]" name="verifyRegistrationFunctionality" duration-ms="8639" started-at="2022-11-02T02:40:11Z" finished-at="2022-11-02T02:40:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test case started verifyRegistrationFunctionality]]>
+            </line>
+            <line>
+              <![CDATA[Test case passed verifyRegistrationFunctionality]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyRegistrationFunctionality -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.codemind.b3project.testCases.HomePageTestCases@10bdf5e5]" name="tearDown" is-config="true" duration-ms="1169" started-at="2022-11-02T02:40:20Z" finished-at="2022-11-02T02:40:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegistrationFunctionality status=SUCCESS method=HomePageTestCases.verifyRegistrationFunctionality()[pri:0, instance:com.codemind.b3project.testCases.HomePageTestCases@10bdf5e5] output=Test case started verifyRegistrationFunctionality]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="initilizeBrowser()[pri:0, instance:com.codemind.b3project.testCases.HomePageTestCases@10bdf5e5]" name="initilizeBrowser" is-config="true" duration-ms="3310" started-at="2022-11-02T02:40:21Z" finished-at="2022-11-02T02:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.codemind.b3project.testCases.HomePageTestCases@10bdf5e5]" name="verifyValidLogin" duration-ms="10749" started-at="2022-11-02T02:40:24Z" data-provider="myDataProvider" finished-at="2022-11-02T02:40:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test case started verifyValidLogin]]>
+            </line>
+            <line>
+              <![CDATA[Test case passed verifyValidLogin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyValidLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.codemind.b3project.testCases.HomePageTestCases@10bdf5e5]" name="tearDown" is-config="true" duration-ms="818" started-at="2022-11-02T02:40:35Z" finished-at="2022-11-02T02:40:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidLogin status=SUCCESS method=HomePageTestCases.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.codemind.b3project.testCases.HomePageTestCases@10bdf5e5] output=Test case started verifyValidLogin]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.codemind.b3project.testCases.HomePageTestCases -->
+      <class name="com.codemind.b3project.testCases.RegistrationTestCases">
+        <test-method status="PASS" signature="initilizeBrowser()[pri:0, instance:com.codemind.b3project.testCases.RegistrationTestCases@dc24521]" name="initilizeBrowser" is-config="true" duration-ms="7052" started-at="2022-11-02T02:39:45Z" finished-at="2022-11-02T02:39:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrowser -->
+        <test-method status="PASS" signature="verifySuccessfullRegistration()[pri:0, instance:com.codemind.b3project.testCases.RegistrationTestCases@dc24521]" name="verifySuccessfullRegistration" duration-ms="14937" started-at="2022-11-02T02:39:52Z" finished-at="2022-11-02T02:40:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test case started verifySuccessfullRegistration]]>
+            </line>
+            <line>
+              <![CDATA[Test case passed verifySuccessfullRegistration]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfullRegistration -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.codemind.b3project.testCases.RegistrationTestCases@dc24521]" name="tearDown" is-config="true" duration-ms="985" started-at="2022-11-02T02:40:07Z" finished-at="2022-11-02T02:40:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessfullRegistration status=SUCCESS method=RegistrationTestCases.verifySuccessfullRegistration()[pri:0, instance:com.codemind.b3project.testCases.RegistrationTestCases@dc24521] output=Test case started verifySuccessfullRegistration]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.codemind.b3project.testCases.RegistrationTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
