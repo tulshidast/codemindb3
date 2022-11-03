@@ -32,7 +32,7 @@ public class HomePageTestCases {
 
 	}
 
-	@Test(dataProvider = "myDataProvider",description="This test case with data provide")
+	@Test(dataProvider = "myDataProvider",description="This test case with data provider")
 	public void verifyValidLogin(String username, String password) {
 		homePage = new HomePage(driver);
 		driver.get(UtilityMethods.getProperty("url"));
