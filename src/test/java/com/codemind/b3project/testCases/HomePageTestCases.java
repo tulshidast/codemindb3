@@ -14,14 +14,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.codemind.b3project.UtilityMethods;
-import com.codemind.b3project.pages.HomePage;
+import com.codemind.b3project.UtilityMethodsB3;
+import com.codemind.b3project.pages.HomePageB3;
 
 //@Listeners(TestNgListner.class)
 public class HomePageTestCases {
 
 	WebDriver driver;
-	HomePage homePage;
+	HomePageB3 homePage;
 
 	@BeforeMethod
 	public void initilizeBrowser() {
@@ -34,15 +34,15 @@ public class HomePageTestCases {
 
 	@Test(dataProvider = "myDataProvider",description="This test case with data provider")
 	public void verifyValidLogin(String username, String password) {
-		homePage = new HomePage(driver);
-		driver.get(UtilityMethods.getProperty("url"));
+		homePage = new HomePageB3(driver);
+		driver.get(UtilityMethodsB3.getProperty("url"));
 		homePage.setUserName();
 		homePage.getUserName().sendKeys(username);
 		// homePage.setPassword();
 		homePage.getPassword().sendKeys(password);
 		homePage.setLoginButton();
 		homePage.getLoginButton().click();
-		UtilityMethods.scrollTillEndOfThePage(driver);
+		UtilityMethodsB3.scrollTillEndOfThePage(driver);
 		homePage.setLoginSuccessfullMsg();
 		assertEquals(homePage.getLoginSuccessfullMsg().getText(), "Login Successfully");
 		// softassert is also known as verify
@@ -59,8 +59,8 @@ public class HomePageTestCases {
 
 	@Test()
 	public void verifyRegistrationFunctionality() {
-		homePage = new HomePage(driver);
-		driver.get(UtilityMethods.getProperty("url"));
+		homePage = new HomePageB3(driver);
+		driver.get(UtilityMethodsB3.getProperty("url"));
 		homePage.setRegisterLink();
 		homePage.getRegisterLink().click();
 		assertTrue(driver.getTitle().equals("Register: Mercury Tours"), "Title doesn't matched");
@@ -71,7 +71,7 @@ public class HomePageTestCases {
 	public void tearDown(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			try {
-				UtilityMethods.getScreenShot(result.getName() + System.currentTimeMillis(), driver);
+				UtilityMethodsB3.getScreenShot(result.getName() + System.currentTimeMillis(), driver);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

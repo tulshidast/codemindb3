@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.codemind.b3project.TestNgListner"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.codemind.b3project.testCases.HomePageTestCases">
+        <methods>
+          <include name="initilizeBrowser"/>
+          <include name="verifyRegistrationFunctionality"/>
+          <include name="verifyValidLogin"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.codemind.b3project.testCases.HomePageTestCases -->
+      <class name="com.codemind.b3project.testCases.RegistrationTestCases">
+        <methods>
+          <include name="initilizeBrowser"/>
+          <include name="tearDown"/>
+          <include name="verifySuccessfullRegistration"/>
+        </methods>
+      </class> <!-- com.codemind.b3project.testCases.RegistrationTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

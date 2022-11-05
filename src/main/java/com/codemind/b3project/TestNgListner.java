@@ -1,6 +1,5 @@
 package com.codemind.b3project;
 
-import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -41,12 +40,12 @@ public class TestNgListner implements ITestListener {
 
 	}
 
-	public void onStart(ITestContext context) {
+	public void onStart(ITestResult result) {
 		// TODO Auto-generated method stub
 
 	}
 
-	public void onFinish(ITestContext context) {
+	public void onFinish(ITestResult result) {
 		// TODO Auto-generated method stub
 
 	}

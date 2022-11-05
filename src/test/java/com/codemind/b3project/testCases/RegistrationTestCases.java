@@ -12,14 +12,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.codemind.b3project.UtilityMethods;
-import com.codemind.b3project.pages.HomePage;
+import com.codemind.b3project.UtilityMethodsB3;
+import com.codemind.b3project.pages.HomePageB3;
 import com.codemind.b3project.pages.RegistrationPage;
 
 //@Listeners(TestNgListner.class)
 public class RegistrationTestCases {
 	WebDriver driver;
-	HomePage homePage;
+	HomePageB3 homePage;
 	RegistrationPage registrationPage;
 
 	@BeforeMethod
@@ -33,16 +33,16 @@ public class RegistrationTestCases {
 
 	@Test
 	public void verifySuccessfullRegistration() {
-		homePage = new HomePage(driver);
+		homePage = new HomePageB3(driver);
 		registrationPage = new RegistrationPage(driver);
-		driver.get(UtilityMethods.getProperty("url"));
+		driver.get(UtilityMethodsB3.getProperty("url"));
 		homePage.setRegisterLink();
 		homePage.getRegisterLink().click();
-		UtilityMethods.waitForPageTitle(driver, 5, "Register: Mercury Tours");
+		UtilityMethodsB3.waitForPageTitle(driver, 5, "Register: Mercury Tours");
 		registrationPage.setFirstNameTextBox();
 		registrationPage.getFirstNameTextBox().sendKeys("sachin");
 		registrationPage.setCountryDropDown();
-		UtilityMethods.selectValueFromDropDownCommingUnderSelectTag(registrationPage.getCountryDropDown(), "INDIA");
+		UtilityMethodsB3.selectValueFromDropDownCommingUnderSelectTag(registrationPage.getCountryDropDown(), "INDIA");
 		registrationPage.setSubmitButton();
 		registrationPage.getSubmitButton().click();
 		registrationPage.setRegistrationSuccessfullMsg();
@@ -55,7 +55,7 @@ public class RegistrationTestCases {
 	public void tearDown(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			try {
-				UtilityMethods.getScreenShot(result.getName() + System.currentTimeMillis(), driver);
+				UtilityMethodsB3.getScreenShot(result.getName() + System.currentTimeMillis(), driver);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

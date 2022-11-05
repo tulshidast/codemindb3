@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.1.0</version>
+			<version>7.6.1</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -55,7 +55,7 @@
 				<version>3.0.0-M6</version>
 				<configuration>
 					<suiteXmlFiles>
-						<file>C:\Users\Administrator\classworkspace\com.codemind\testng2.xml</file>
+						<file>C:\Users\Administrator\classworkspace\com.codemind.b3project\testng.xml</file>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
